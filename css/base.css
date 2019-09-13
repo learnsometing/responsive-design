@@ -13,6 +13,7 @@ General
 }
 
 a {
+    color: #f42;
     text-decoration: none;
 }
 
@@ -28,6 +29,8 @@ ul {
 }
 
 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
     letter-spacing: -.015em;
 }
 

@@ -35,8 +35,25 @@ Cover
     margin-left: 6px;
 }
 
+/* 
+====================
+Navigation
+====================
+*/
+
 .nav-logo > a{
     background: linear-gradient(to bottom right,#c09,#f42 85%);
     font-size: 24px;
     font-weight: bold;
+}
+
+/* 
+====================
+News
+====================
+*/
+
+.latest,
+.latest h2{
+    margin-bottom: 24px;
 }

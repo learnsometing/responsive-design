@@ -142,6 +142,116 @@ Cover
 
 /* 
 ====================
+news
+====================
+*/
+
+.latest {
+    margin-bottom: 2em;
+    padding-top: 24px;
+}
+
+.u-col-xs-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+[class*=" u-col-"],
+[class^="u-col-"]{
+    flex: 0 0 auto;
+    padding: 8px;
+    position: relative;
+}
+
+.u-row {
+    display: flex;
+    flex: 0 1 auto;
+    flex-flow: row wrap;
+    margin: -8px;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1192px;
+    padding: 0 20px;
+}
+
+.story-byline {
+    color: #aaa;
+    font-size: 12px;
+    padding-top: 4px;
+}
+
+.story--smallMobile .story-byline {
+    line-height: 18px !important;
+}
+
+.story-byline a {
+    color: #aaa;
+}
+
+.story-byline li {
+    display: block;
+    float: left;
+}
+
+.story-byline li::after {
+    content: "\B7";
+    display: block;
+    float: right;
+    margin: 0 4px;
+}
+
+.story--smallMobile {
+    min-height: 72px;
+    padding-left: 88px;
+    position: relative;
+}
+
+.story-image {
+    background-color: #000;
+    background-image: url("../images/picture.svg");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    padding-top: 50%;
+    width: 100%;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.story--smallMobile .story-image{
+    left: 0;
+    padding-top: 75px;
+    position: absolute;
+    top: 0;
+    width: 75px;
+}
+
+.story-title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    margin-bottom: 1px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.story-title a {
+    color: #000;
+}
+
+.story--smallMobile .story-title {
+    font-size: 12px !important;
+    font-weight: 700;
+    line-height: 18px !important;
+}
+
+/* 
+====================
 icons 
 ====================
 */
@@ -181,10 +291,6 @@ images
     max-width: 368px;
     width: 368px;
     height: 276px;
-}
-
-.thumb {
-    max-width: 75px;
 }
 
 .thumb-investment {
