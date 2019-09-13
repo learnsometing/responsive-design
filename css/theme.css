@@ -1,0 +1,42 @@
+/* 
+====================
+Cover
+====================
+*/
+
+.cover,
+.cover h2{
+    font-size: 20px;
+    margin-bottom: 0.25em;
+}
+
+.cover h2,
+.cover h5,
+.nav-logo > a {
+    color: #fff;
+}
+
+.cover-byline {
+    color: hsla(0, 0%, 100%, .6);
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.cover-byline a {
+    color: hsla(0,0%,100%,.6);
+}
+
+.cover-byline li:first-child{
+    margin-left: 0;
+}
+
+.cover-byline li {
+    display: inline-block;
+    margin-left: 6px;
+}
+
+.nav-logo > a{
+    background: linear-gradient(to bottom right,#c09,#f42 85%);
+    font-size: 24px;
+    font-weight: bold;
+}

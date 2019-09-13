@@ -1,0 +1,198 @@
+/* 
+====================
+Top Navigation
+====================
+*/
+
+.clear-fix {
+    width: 100%;
+    *zoom: 1;
+}
+
+.nav-icons,
+#nav-top {
+    height: 48px;
+}
+
+
+.clear-fix:before,
+.clear-fix:after {
+    content: '';
+    display: table;
+}
+
+.clear-fix:after {
+    clear: both;
+}
+
+.nav-icons li > a,
+.nav-mob-toggle {
+    display: block;
+    height: 48px;
+    padding: 16px;
+    width: 48px;
+}
+
+.nav-icons {
+    float: right;
+}
+
+.nav-icons li {
+    border-left: 1px solid gray;
+    float: left;
+}
+
+.nav-logo {
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+.nav-logo > a {
+    display: block;
+    padding: 12px 20px;
+    will-change: height;
+}
+
+.nav-logo,
+.nav-logo > a {
+    height: 48px;
+    width: 106px;
+}
+
+.nav-mob-toggle {
+    position: relative;
+}
+
+.nav-mob-toggle div{
+    position: absolute;
+    left: 14px;
+    top: 38%;
+}
+
+.nav-mob-toggle span {
+    transition: .4s;
+    background-color: #f42;
+    display: block;
+    height: 2px;
+    margin-top: -1px;
+    margin-bottom: 5px;
+    width: 20px;
+}
+
+#nav-top{
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    background-color: #fff;
+}
+
+/* 
+====================
+Cover
+====================
+*/
+.cover article {
+    min-height: 30vh;
+    position: relative;
+}
+
+.cover-header{
+    bottom: 4px;
+    left: 4px;
+    padding: 14px 12px;
+    position: absolute;
+    right: 4px;
+    z-index: 3;
+}
+
+.cover-image {
+    background-position: 50%;
+    z-index: 1;
+    background-image: url("../images/picture.svg");
+    background-repeat: no-repeat;
+}
+
+.cover-image,
+.cover-image-filter {
+    bottom: 4px;
+    left: 4px;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+}
+
+.cover-image-filter {
+    background-color: #000;
+    background-size: cover;
+    z-index: 2;
+    opacity: 0.4;
+}
+
+.cover-story {
+    float: left;
+    height: 192px;
+    overflow: hidden;
+    padding: 4px;
+    position: relative;
+    width: 100%;    
+}
+
+/* 
+====================
+icons 
+====================
+*/
+
+.cover-byline li .icon {
+    float: left;
+    margin-right: 4px;
+    opacity: 0.6;
+    vertical-align: middle;
+}
+
+.investment-card-icon {
+    max-width: 20px;
+}
+
+.icon {
+    display: block;
+    height: 16px;
+    width: 16px;
+}
+
+.icon--clock--light {
+    background-image: url("../images/primary-history.svg");
+}
+
+.icon--share--light {
+    background-image: url("../images/sharethis-logo.svg");
+}
+
+/* 
+====================
+images 
+====================
+*/
+
+.popular-image {
+    max-width: 368px;
+    width: 368px;
+    height: 276px;
+}
+
+.thumb {
+    max-width: 75px;
+}
+
+.thumb-investment {
+    max-width: 60px;
+}
+
+.thumb-latest {
+    max-width: 1200px;
+    width: 96px;
+    height: 96px;
+}

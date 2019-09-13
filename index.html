@@ -4,64 +4,116 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Responsive Design</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/module.css">
+    <link rel="stylesheet" href="./css/theme.css">
+    <link rel="stylesheet" href="./css/state.css">
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="#">TNW</a>
-        <ul>
+    <nav id="nav-top">
+      <div class="nav-logo">
+          <a href="#">TNW</a>
+      </div>
+      <div class="clear-fix">
+        <ul class="nav-icons">
           <li>
-            Search
+            <a href="#"><img src="./images/magnifier.svg" class='icon'></a>
           </li>
           <li>
-            Menu
+            <a href="#" class="nav-mob-toggle">
+              <div>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </a>
           </li>
         </ul>
-      </nav>
-      <section>
-        Banner: How will blockchain impact fintech and business?
-      </section>
-    </header>
+      </div>
+    </nav>
 
     <main>
-      <section>
-        <a href="#">
-          <article>
-            <h5>GEAR</h5>
-            <p>Fitbit"s $199 Versa 2 goes on sale September 15</p>
-            <div>
-              <a href="#">by Napier Lopez</a> 
-              <img src="./images/primary-history.svg" class="article-svg">
-               1 hour ago
-              <img src="./images/share.svg" class="article-svg"> 7
-            </div>
-          </article>
-        </a>
-        <a href="#">
-            <article>
-              <h5>DISTRACT</h5>
-              <p>Nintendo debuts Ring Fit Adventure, the Switch's answer to Wii Fit</p>
-              <div>
-                <a href="#">by Rachel Kaser</a> 
-                <img src="./images/primary-history.svg" class="article-svg">
-                 2 hours ago
-                <img src="./images/share.svg" class="article-svg"> 6
-              </div>
-            </article>
-          </a>
-          <a href="#">
-            <article>
-              <h5>GEAR</h5>
-              <p>Amazon will launch new Alexa hardware on September 25</p>
-              <div>
-                <a href="#">by Napier Lopez</a> 
-                <img src="./images/primary-history.svg" class="article-svg">
-                  3 hours ago
-                <img src="./images/share.svg" class="article-svg"> 17
-              </div>
-            </article>
-          </a>
+      <section class="cover">
+        <article class="cover-story">
+          <div class="cover-image">
+          </div>
+          <div class="cover-image-filter">
+          </div>
+          <header class="cover-header">
+            <h5>gear</h5>
+            <h2>Fitbit"s $199 Versa 2 goes on sale September 15</h2>
+            <ul class="cover-byline">
+              <li>
+                by
+                <a href="#">
+                  Napier Lopez
+                </a>
+              </li>
+              <li>
+                <i class="icon icon--clock--light"></i>
+                1 hour ago
+              </li>
+              <li>
+                <i class="icon icon--share--light"></i>
+                7
+              </li>
+            </ul>
+          </header>
+        </article>
+        <article class="cover-story">
+          <div class="cover-image">
+          </div>
+          <div class="cover-image-filter">
+          </div>
+          <header class="cover-header">
+            <h5>distract</h5>
+            <h2>Nintendo debuts Ring Fit Adventure, the Switch's answer to Wii Fit</h2>
+            <ul class="cover-byline">
+              <li>
+                by
+                <a href="#">
+                  Rachel Kaser
+                </a>
+              </li>
+              <li>
+                <i class="icon icon--clock--light"></i>
+                2 hours ago
+              </li>
+              <li>
+                <i class="icon icon--share--light"></i>
+                6
+              </li>
+            </ul>
+          </header>
+        </article>
+        <article class="cover-story">
+          <div class="cover-image">
+          </div>
+          <div class="cover-image-filter">
+          </div>
+          <header class="cover-header">
+            <h5>gear</h5>
+            <h2>Amazon will launch new Alexa hardware on September 25</h2>
+            <ul class="cover-byline">
+              <li>
+                by
+                <a href="#">
+                  Napier Lopez
+                </a>
+              </li>
+              <li>
+                <i class="icon icon--clock--light"></i>
+                3 hours ago
+              </li>
+              <li>
+                <i class="icon icon--share--light"></i>
+                17
+              </li>
+            </ul>
+          </header>
+        </article>
       </section>
 
       <div>
@@ -789,25 +841,25 @@
         <div class='footer-links-social'>
           <ul>
             <li class='social-media-link'>
-              <a href='#'><img src="./images/facebook-logo.svg" class="media-icon"></a>
+              <a href='#'><img src="./images/facebook-logo.svg" class="icon"></a>
             </li>
             <li class='social-media-link'>
-              <a href='#'><img src="./images/twitter-logo.svg" class="media-icon"></a>
+              <a href='#'><img src="./images/twitter-logo.svg" class="icon"></a>
             </li>
             <li class='social-media-link'>
-              <a href='#'><img src="./images/player-play-button-symbol.svg" class="media-icon"></a>
+              <a href='#'><img src="./images/player-play-button-symbol.svg" class="icon"></a>
             </li>
             <li class='social-media-link'>
-              <a href='#'><img src="./images/instagram.svg" class="media-icon"></a>
+              <a href='#'><img src="./images/instagram.svg" class="icon"></a>
             </li>
             <li class='social-media-link'>
-              <a href='#'><img src="./images/pinterest.svg" class="media-icon"></a>
+              <a href='#'><img src="./images/pinterest.svg" class="icon"></a>
             </li>
             <li class='social-media-link'>
-              <a href='#'><img src="./images/rss.svg" class="media-icon"></a>
+              <a href='#'><img src="./images/rss.svg" class="icon"></a>
             </li>
             <li class='social-media-link'>
-              <a href='#'><img src="./images/email.svg" class="media-icon"></a>
+              <a href='#'><img src="./images/email.svg" class="icon"></a>
             </li>
           </ul>
         </div>
