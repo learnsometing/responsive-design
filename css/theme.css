@@ -1,5 +1,16 @@
 /* 
 ====================
+General
+====================
+*/
+a,
+.post-body a strong {
+    color: #f42;
+    text-decoration: none;
+}
+
+/* 
+====================
 Cover
 ====================
 */
@@ -57,3 +68,74 @@ News
 .latest h2{
     margin-bottom: 24px;
 }
+
+/* 
+====================
+Deals
+====================
+*/
+
+.story-byline {
+    color: #aaa;
+    font-size: 12px;
+    line-height: 18px;
+    padding-top: 4px;
+}
+
+.story-investmentCard-name {
+    background: #f42;
+    color: #fff;
+    padding: 10.6666666667px 16px 10.6666666667px 84px;
+    margin: 0 !important;
+    font-size: 18px !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.story-investmentCard-deets h4 {
+    font-size: 18px;
+    color: #000;
+    margin: 0 !important;
+}
+
+.story-investmentCard-deets h5 {
+    color: #000;
+    opacity: .5;
+}
+
+.story-investmentCard-bit {
+    font-size: 13px;
+    color: #555;
+    line-height: 22px;
+}
+
+.vertical h4 {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.post-body a strong,
+a {
+    color
+}
+
+.post-body a .story-byline strong,
+.story-byline .post-body a strong,
+.story-byline a,
+.story-title-source {
+    color: #aaa;
+}
+
+.vertical .story-title-link {
+    font-size: 11px;
+    font-weight: 400;
+    color: #aaa;
+}
+
+.post-body a .vertical .story-byline li strong,
+.vertical .story-byline li .post-body a strong,
+.vertical .story-byline li a {
+    color: #555;
+}
+
