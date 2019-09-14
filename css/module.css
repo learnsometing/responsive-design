@@ -435,6 +435,49 @@ Deals
     text-decoration: line-through;
     margin-right: 4px;
 }
+
+/* 
+====================
+Footer 
+====================
+*/
+
+.footer-links {
+    background: #131313;
+    padding: 2.5em 0;
+}
+
+.footer-links-social {
+    margin-bottom: 1.5em;
+}
+
+.footer-links-social li {
+    display: inline-block;
+    margin: 0 3px;
+}
+
+.footer-links-social li a {
+    background: #333;
+    border-radius: 50%;
+    display: block;
+    height: 40px;
+    padding: 12px;
+    text-align: center;
+    width: 40px;
+}
+
+.footer-links-menu li {
+    font-weight: 500;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 11px;
+    line-height: 24px;
+    margin: 0 4px;
+}
+
+.footer-legal span {
+    display: block;
+}
 /* 
 ====================
 icons 

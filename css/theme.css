@@ -209,3 +209,32 @@ Sections
     padding-top: 4px;
     vertical-align: baseline;
 }
+
+/* 
+====================
+Footer
+====================
+*/
+
+.footer-links-menu li a {
+    color: #aaa;
+}
+
+.footer-legal {
+    background: #000;
+    color: #aaa;
+    font-size: 13px;
+    padding: 2.5em 0;
+}
+
+.footer-legal span {
+    text-align: center;
+}
+
+.footer-legal span b{
+    color: #f42;
+}
+
+.footer-logo {
+    color: #fff;
+}
