@@ -423,6 +423,20 @@ Sections
 
 /* 
 ====================
+Deals 
+====================
+*/
+
+.deals-header {
+    margin-bottom: 24px;
+}
+
+.story--deal .story-dealPrice-old {
+    text-decoration: line-through;
+    margin-right: 4px;
+}
+/* 
+====================
 icons 
 ====================
 */

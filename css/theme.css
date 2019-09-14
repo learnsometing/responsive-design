@@ -115,11 +115,6 @@ Deals
     margin-bottom: 12px;
 }
 
-.post-body a strong,
-a {
-    color
-}
-
 .post-body a .story-byline strong,
 .story-byline .post-body a strong,
 .story-byline a,
@@ -199,4 +194,18 @@ Sections
     display: block;
     padding: 6px 0 6px 14px;
     position: relative;
+}
+
+/* 
+====================
+Sections
+====================
+*/
+
+.story--deal .story-dealPrice {
+    color: #aaa;
+    font-size: 12px;
+    line-height: 18px;
+    padding-top: 4px;
+    vertical-align: baseline;
 }
