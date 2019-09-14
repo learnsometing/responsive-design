@@ -333,6 +333,94 @@ Deals
     margin-top: 10px;
     padding-top: 10px;
 }
+
+/* 
+====================
+Sections 
+====================
+*/
+
+.sections {
+    margin-bottom: 40px;
+}
+
+.section .distraction-title,
+.section h2 {
+    margin-bottom: 14px;
+}
+
+.section-popular {
+    height: 0;
+    padding-top: 75%;
+    position: relative;
+    width: 100%;
+}
+
+.section-popular-trigger {
+    background-size: 100% 100%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.section-popular-header {
+    bottom: 0;
+    left: 0;
+    padding: 14px;
+    position: absolute;
+    right: 0;
+    z-index: 3;
+}
+
+.section-popular-title {
+    margin-bottom: 6px;
+}
+
+.section-popular-byline {
+    color: hsla(0, 0%, 100%, .6);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.section-popular-byline li {
+    display: block;
+    float: left;
+}
+
+.section-popular-byline li a::after {
+    content: "\B7";
+    display: block;
+    float: right;
+    margin: 0 4px;
+}
+
+.section-latest {
+    display: flex;
+    flex-direction: row;
+    margin:2px 0;
+}
+
+.section-latest-header {
+    flex: 1;
+    overflow:hidden;
+    padding: 10px 14px 0;
+}
+
+.section-latest-title {
+    max-height: 56px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+.section-headline {
+    border-bottom: 1px solid #eee;
+}
+
 /* 
 ====================
 icons 
@@ -370,6 +458,7 @@ icons
     left: 0;
     opacity: .9;
 }
+
 /* 
 ====================
 images 
@@ -396,10 +485,13 @@ images
     z-index: 10;
 }
 
-.thumb-latest {
-    max-width: 1200px;
-    width: 96px;
+.section-latest-image {
+    flex: 0 0 96px;
+    background-color: #000;
+    background-position: 50%;
+    background-size: cover;
     height: 96px;
+    width: 96px;
 }
 
 /* 
