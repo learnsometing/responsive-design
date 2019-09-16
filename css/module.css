@@ -196,7 +196,6 @@ news
     flex: 0 1 auto;
     flex-flow: row wrap;
     margin: -8px;
-    width: 100%;
 }
 
 .wrapper {
@@ -207,6 +206,12 @@ news
 
 .story-byline {
     padding-top: 4px;
+}
+
+.story-byline::after {
+    clear: both;
+    content: '';
+    display: block;
 }
 
 .story-byline a {
@@ -267,7 +272,13 @@ Deals
     margin-bottom: 24px;
 }
 
-.deals-header,
+.deals-header::after {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+.deals-header .distraction-title,
 .deals-header h2 {
     float: left;
     line-height: 32px;
@@ -281,6 +292,16 @@ Deals
 
 .story--investment {
     background: #fffaf8;
+}
+
+.vertical .story-byline {
+    border-top: 1px solid rgba(255, 68, 34, .25);
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.story--investment .story-byline {
+    margin-top: 0;
 }
 
 .story-investmentCard-header {
@@ -312,11 +333,6 @@ Deals
 
 .story-investment .story-byline {
     margin-top: 0;
-}
-
-.story-byline li {
-    display: block;
-    float: left;
 }
 
 .story-addPadding {
@@ -424,10 +440,6 @@ Sections
 Deals 
 ====================
 */
-
-.deals-header {
-    margin-bottom: 24px;
-}
 
 .story--deal .story-dealPrice-old {
     text-decoration: line-through;
