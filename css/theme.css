@@ -63,17 +63,6 @@ Cover
 
 /* 
 ====================
-News
-====================
-*/
-
-.latest,
-.latest h2{
-    margin-bottom: 24px;
-}
-
-/* 
-====================
 Deals
 ====================
 */
@@ -236,7 +225,6 @@ footer {
     background: #000;
     color: #aaa;
     font-size: 13px;
-    padding: 2.5em 0;
 }
 
 .footer-legal span {
@@ -257,7 +245,20 @@ Media Queries
 ====================
 */
 
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .cover--grid3 article .distraction-title,
+    .cover--grid3 article h2{
+        font-size: 20px;
+    }
+}
+
 @media screen and (min-width: 768px) {
+
+    .distraction-title,
+    h2 {
+        font-size: 28px;
+    }
+
     .nav-tnw .post-body a strong,
     .nav-tnw a,
     .post-body a,
