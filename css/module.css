@@ -4,25 +4,22 @@ Top Navigation
 ====================
 */
 
-.clear-fix {
-    width: 100%;
-    *zoom: 1;
+.nav-follow,
+.nav-sections,
+.nav-sections-dropdown,
+.nav-tnw {
+    display: none;
 }
 
 .nav-icons,
-#nav-top {
+.nav {
     height: 48px;
 }
 
-
-.clear-fix:before,
-.clear-fix:after {
-    content: '';
-    display: table;
-}
-
-.clear-fix:after {
+.u-clear::after {
     clear: both;
+    content: '';
+    display: block;
 }
 
 .nav-icons li > a,
@@ -54,14 +51,11 @@ Top Navigation
 
 .nav-logo > a {
     display: block;
-    padding: 12px 20px;
-    will-change: height;
-}
-
-.nav-logo,
-.nav-logo > a {
     height: 48px;
+    padding: 12px 20px;
+    text-align: center;
     width: 106px;
+    will-change: height;
 }
 
 .nav-message {
@@ -105,13 +99,12 @@ Top Navigation
     width: 20px;
 }
 
-#nav-top{
+.nav{
     left: 0;
     position: fixed;
     right: 0;
     top: 0;
     z-index: 10;
-    background-color: #fff;
 }
 
 /* 
@@ -124,6 +117,12 @@ Cover
     margin: 0 auto;
     padding: 4px;
     position: relative;
+}
+
+.cover::after{
+    clear: both;
+    content: '';
+    display: block;
 }
 
 .cover-header{
@@ -590,6 +589,98 @@ Media Queries
     .deals.deals--long .deals-header .deals-header-more {
         float: none;
         margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .nav {
+        height: 80px;
+        padding-left: 106px;
+        position: absolute;
+    }
+
+    .nav-logo > a,
+    .post-body a .nav-logo > strong {
+        height: 80px;
+        line-height: 56px;
+    }
+
+    .nav-tnw {
+        background: #131313;
+        display: block;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 32px;
+        max-height: 32px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .nav-tnw li {
+        float: left;
+        margin-left: 12px;
+        position: relative;
+    }
+
+    .nav-tnw li:first-child {
+        margin-left: 20px;
+    }
+
+    .nav-company {
+        float: right;
+        padding-right: 20px;
+    }
+
+    .nav-tnw::after {
+        clear: both;
+        content: '';
+        display: block;
+    }
+
+    .nav-sections {
+        display: block;
+        position: absolute;
+        will-change: opacity;
+    }
+
+    .nav-sections > li {
+        float: left;
+        position: relative;
+    }
+
+    .nav-sections > li:first-child .post-body a strong,
+    .nav-sections > li:first-child a,
+    .post-body a .nav-sections > li:first-child strong {
+        padding-left: 20px;
+    }
+
+    .nav-sections-dropdown-toggle .post-body a strong,
+    .nav-sections-dropdown-toggle a,
+    .nav-sections-section .post-body a strong,
+    .nav-sections-section a,
+    .post-body a .nav-sections-dropdown-toggle strong,
+    .post-body a .nav-sections-section strong {
+        font-weight: 700;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #aaa;
+        display: block;
+        height: 48px;
+        letter-spacing: .04em;
+        line-height: 1;
+        padding: 18px 10px 0;
+    }
+
+    .nav-message {
+        margin-left: -106px;
+        padding-left: 126px;
+        text-align: left;
+    }
+
+    .nav-follow-less,
+    .nav-icons .nav-mob-toggle,
+    .nav-mob {
+        display: none;
     }
 }
 

@@ -19,6 +19,10 @@ Navigation
 ====================
 */
 
+.nav {
+    background: #fff;
+    box-shadow: 0 0 32px rgba(0, 0, 0, .15);
+}
 .nav-logo > a{
     background: linear-gradient(to bottom right,#c09,#f42 85%);
     font-size: 24px;
@@ -252,6 +256,23 @@ footer {
 Media Queries
 ====================
 */
+
+@media screen and (min-width: 768px) {
+    .nav-tnw .post-body a strong,
+    .nav-tnw a,
+    .post-body a,
+    .nav-tnw strong {
+        color: hsla(0, 0%, 100%, .6);
+    }
+
+    .nav-tnw .post-body a strong.is-active,
+    .nav-tnw .post-body a strong:hover,
+    .nav-tnw a.is-active,
+    .nav-tnw a:hover, .post-body a .nav-tnw strong.is-active,
+    .post-body a .nav-tnw strong:hover {
+        color: #fff;
+    }
+}
 
 @media screen and (max-width: 767px){
     .cover h2{
