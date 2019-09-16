@@ -38,8 +38,12 @@ Top Navigation
 }
 
 .nav-icons li {
-    border-left: 1px solid gray;
+    border-left: 1px solid #eee;;
     float: left;
+}
+
+.nav-icons img {
+    opacity: .3;
 }
 
 .nav-logo {
@@ -58,6 +62,27 @@ Top Navigation
 .nav-logo > a {
     height: 48px;
     width: 106px;
+}
+
+.nav-message {
+    position: relative;
+    margin-left: 0;
+    font-size: 11px;
+    line-height: 24px;
+    background-color: #000;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 0 6px;
+}
+
+.nav-message-answers {
+    box-shadow: 0 16px 48px rgba(0, 0, 0, .15);
+    line-height: 30px;
+    background:#fd3;
+    font-size: 10px;
+    color: #000;
 }
 
 .nav-mob-toggle {
@@ -94,8 +119,10 @@ Top Navigation
 Cover
 ====================
 */
-.cover article {
-    min-height: 30vh;
+
+.cover {
+    margin: 0 auto;
+    padding: 4px;
     position: relative;
 }
 
@@ -109,14 +136,16 @@ Cover
 }
 
 .cover-image {
-    background-position: 50%;
-    z-index: 1;
     background-image: url("../images/picture.svg");
+    background-size: cover;
+    background-position: 50%;
     background-repeat: no-repeat;
+    z-index: 1;
 }
 
 .cover-image,
-.cover-image-filter {
+.cover-image-filter,
+.cover-trigger {
     bottom: 4px;
     left: 4px;
     position: absolute;
@@ -133,7 +162,6 @@ Cover
 
 .cover-story {
     float: left;
-    height: 192px;
     overflow: hidden;
     padding: 4px;
     position: relative;
@@ -178,13 +206,7 @@ news
 }
 
 .story-byline {
-    color: #aaa;
-    font-size: 12px;
     padding-top: 4px;
-}
-
-.story--smallMobile .story-byline {
-    line-height: 18px !important;
 }
 
 .story-byline a {
@@ -203,12 +225,6 @@ news
     margin: 0 4px;
 }
 
-.story--smallMobile {
-    min-height: 72px;
-    padding-left: 88px;
-    position: relative;
-}
-
 .story-image {
     background-color: #000;
     background-image: url("../images/picture.svg");
@@ -224,16 +240,9 @@ news
     position: relative;
 }
 
-.story--smallMobile .story-image{
-    left: 0;
-    padding-top: 75px;
-    position: absolute;
-    top: 0;
-    width: 75px;
-}
-
 .story-title {
     font-size: 14px;
+    font-weight: 700;
     line-height: 18px;
     margin-bottom: 1px;
     overflow-wrap: break-word;
@@ -242,11 +251,6 @@ news
 
 .story-title a {
     color: #000;
-}
-
-.story--smallMobile .story-title {
-    font-size: 12px !important;
-    line-height: 18px !important;
 }
 
 /* 
@@ -326,12 +330,6 @@ Deals
 .vertical {
     min-height: 60px;
     position: relative;
-}
-
-.vertical .story-byline {
-    border-top: 1px solid rgba(255, 68, 34, .25);
-    margin-top: 10px;
-    padding-top: 10px;
 }
 
 /* 
@@ -580,5 +578,36 @@ Media Queries
     .deals.deals--long .deals-header .deals-header-more {
         float: none;
         margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .cover article {
+        min-height: 30vh;
+        position: relative;
+    }
+
+    .story--smallMobile {
+        min-height: 72px;
+        padding-left: 88px;
+        position: relative;
+    }
+
+    .story--smallMobile .story-byline {
+        line-height: 18px !important;
+    }
+
+    .story--smallMobile .story-image{
+        left: 0;
+        padding-top: 75px;
+        position: absolute;
+        top: 0;
+        width: 75px;
+    }
+
+    .story--smallMobile .story-title {
+        font-size: 14px !important;
+        line-height: 18px !important;
+        font-weight: 700;
     }
 }

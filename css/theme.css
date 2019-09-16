@@ -9,18 +9,29 @@ a,
     text-decoration: none;
 }
 
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* 
+====================
+Navigation
+====================
+*/
+
+.nav-logo > a{
+    background: linear-gradient(to bottom right,#c09,#f42 85%);
+    font-size: 24px;
+    font-weight: bold;
+}
+
 /* 
 ====================
 Cover
 ====================
 */
 
-.cover,
-.cover h2{
-    font-size: 20px;
-    margin-bottom: 0.25em;
-}
-
+.cover a,
 .cover h2,
 .cover h5,
 .nav-logo > a {
@@ -48,18 +59,6 @@ Cover
 
 /* 
 ====================
-Navigation
-====================
-*/
-
-.nav-logo > a{
-    background: linear-gradient(to bottom right,#c09,#f42 85%);
-    font-size: 24px;
-    font-weight: bold;
-}
-
-/* 
-====================
 News
 ====================
 */
@@ -77,7 +76,7 @@ Deals
 
 .story-byline {
     color: #aaa;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 18px;
     padding-top: 4px;
 }
@@ -126,6 +125,12 @@ Deals
     font-size: 11px;
     font-weight: 400;
     color: #aaa;
+}
+
+.vertical .story-byline {
+    border-top: 1px solid rgba(255, 68, 34, .25);
+    margin-top: 10px;
+    padding-top: 10px;
 }
 
 .post-body a .vertical .story-byline li strong,
@@ -237,4 +242,17 @@ Footer
 
 .footer-logo {
     color: #fff;
+}
+
+/* 
+====================
+Media Queries
+====================
+*/
+
+@media screen and (max-width: 767px){
+    .cover h2{
+        font-size: 20px;
+        margin-bottom: 0.25em;
+    }
 }
