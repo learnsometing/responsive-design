@@ -3,6 +3,7 @@
 General
 ====================
 */
+
 a,
 .post-body a strong {
     color: #f42;
@@ -11,6 +12,41 @@ a,
 
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    letter-spacing: -.015em;
+}
+
+h2,
+h3 {
+    color: #f42;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+h4,
+h5 {
+    font-size: 14px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    color: #f42;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+h5 {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    line-height: 1.5;
 }
 
 /* 
@@ -58,13 +94,13 @@ Cover
     color: hsla(0,0%,100%,.6);
 }
 
-.cover-byline li:first-child{
-    margin-left: 0;
-}
-
 .cover-byline li {
     display: inline-block;
     margin-left: 6px;
+}
+
+.cover-byline li:first-child{
+    margin-left: 0;
 }
 
 /* 
@@ -80,25 +116,10 @@ Deals
     padding-top: 4px;
 }
 
-.story-investmentCard-name {
-    background: #f42;
-    color: #fff;
-    padding: 10.6666666667px 16px 10.6666666667px 84px;
-    margin: 0 !important;
-    font-size: 18px !important;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.vertical h4 {
-    font-size: 16px;
-    margin-bottom: 12px;
-}
-
-.vertical h5{
-    color: #f42;
-    font-size: 11px;
+.story-investmentCard-bit {
+    font-size: 13px;
+    color: #555;
+    line-height: 22px;
 }
 
 .story-investmentCard-deets h4 {
@@ -112,10 +133,15 @@ Deals
     opacity: .5;
 }
 
-.story-investmentCard-bit {
-    font-size: 13px;
-    color: #555;
-    line-height: 22px;
+.story-investmentCard-name {
+    background: #f42;
+    color: #fff;
+    padding: 10.6666666667px 16px 10.6666666667px 84px;
+    margin: 0 !important;
+    font-size: 18px !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .post-body a .story-byline strong,
@@ -125,16 +151,26 @@ Deals
     color: #aaa;
 }
 
+.post-body a .vertical .story-byline li strong,
+.vertical .story-byline li .post-body a strong,
+.vertical .story-byline li a {
+    color: #555;
+}
+
 .vertical .story-title-link {
     font-size: 12px;
     font-weight: 400;
     color: #aaa;
 }
 
-.post-body a .vertical .story-byline li strong,
-.vertical .story-byline li .post-body a strong,
-.vertical .story-byline li a {
-    color: #555;
+.vertical h4 {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.vertical h5{
+    color: #f42;
+    font-size: 11px;
 }
 
 /* 
@@ -143,34 +179,17 @@ Sections
 ====================
 */
 
-.section-popular{
-    background-image: url("../images/picture.svg");
-    background-repeat: no-repeat;
-    background-position-x: 50%;
-}
-
-.section-popular-trigger {   
-    background: rgba(102,102,102,0);
-    background: -moz-linear-gradient(top, rgba(102,102,102,0) 0%, rgba(30,30,30,0.79) 64%, rgba(19,19,19,0.85) 74%, rgba(19,19,19,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(102,102,102,0)), color-stop(64%, rgba(30,30,30,0.79)), color-stop(74%, rgba(19,19,19,0.85)), color-stop(100%, rgba(19,19,19,1)));
-    background: -webkit-linear-gradient(top, rgba(102,102,102,0) 0%, rgba(30,30,30,0.79) 64%, rgba(19,19,19,0.85) 74%, rgba(19,19,19,1) 100%);
-    background: -o-linear-gradient(top, rgba(102,102,102,0) 0%, rgba(30,30,30,0.79) 64%, rgba(19,19,19,0.85) 74%, rgba(19,19,19,1) 100%);
-    background: -ms-linear-gradient(top, rgba(102,102,102,0) 0%, rgba(30,30,30,0.79) 64%, rgba(19,19,19,0.85) 74%, rgba(19,19,19,1) 100%);
-    background: linear-gradient(to bottom, rgba(102,102,102,0) 0%, rgba(30,30,30,0.79) 64%, rgba(19,19,19,0.85) 74%, rgba(19,19,19,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666', endColorstr='#131313', GradientType=0 );
-}
-.section-popular-section,
-.section-popular-title a {
-    color: #fff;
-}
-
-.section-popular-byline a {
-    color: hsla(0, 0%, 100%, .6);
-}
-
-.section-popular-section {
+.section-headline h4 {
     font-size: 13px;
-    pointer-events: none;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.section-headline h4 a {
+    color: #555;
+    display: block;
+    padding: 6px 0 6px 14px;
+    position: relative;
 }
 
 .section-latest {
@@ -186,22 +205,40 @@ Sections
     color: #f42;
 }
 
-.section-headline h4 {
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 1.5;
+.section-popular{
+    background-image: url("../images/picture.svg");
+    background-repeat: no-repeat;
+    background-position-x: 50%;
 }
 
-.section-headline h4 a {
-    color: #555;
-    display: block;
-    padding: 6px 0 6px 14px;
-    position: relative;
+.section-popular-section {
+    font-size: 13px;
+    pointer-events: none;
+}
+
+.section-popular-section,
+.section-popular-title a {
+    color: #fff;
+}
+
+.section-popular-trigger {   
+    background: rgba(102,102,102,0);
+    background: -moz-linear-gradient(top, rgba(102,102,102,0) 0%, rgba(30,30,30,0.79) 64%, rgba(19,19,19,0.85) 74%, rgba(19,19,19,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(102,102,102,0)), color-stop(64%, rgba(30,30,30,0.79)), color-stop(74%, rgba(19,19,19,0.85)), color-stop(100%, rgba(19,19,19,1)));
+    background: -webkit-linear-gradient(top, rgba(102,102,102,0) 0%, rgba(30,30,30,0.79) 64%, rgba(19,19,19,0.85) 74%, rgba(19,19,19,1) 100%);
+    background: -o-linear-gradient(top, rgba(102,102,102,0) 0%, rgba(30,30,30,0.79) 64%, rgba(19,19,19,0.85) 74%, rgba(19,19,19,1) 100%);
+    background: -ms-linear-gradient(top, rgba(102,102,102,0) 0%, rgba(30,30,30,0.79) 64%, rgba(19,19,19,0.85) 74%, rgba(19,19,19,1) 100%);
+    background: linear-gradient(to bottom, rgba(102,102,102,0) 0%, rgba(30,30,30,0.79) 64%, rgba(19,19,19,0.85) 74%, rgba(19,19,19,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666', endColorstr='#131313', GradientType=0 );
+}
+
+.section-popular-byline a {
+    color: hsla(0, 0%, 100%, .6);
 }
 
 /* 
 ====================
-Sections
+Deals
 ====================
 */
 
@@ -251,10 +288,16 @@ Media Queries
 ====================
 */
 
-@media screen and (min-width: 768px) and (max-width: 1023px){
-    .cover--grid3 article .distraction-title,
-    .cover--grid3 article h2{
+@media screen and (min-width: 480px){
+    .nav-message {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .cover h2{
         font-size: 20px;
+        margin-bottom: 0.25em;
     }
 }
 
@@ -281,15 +324,9 @@ Media Queries
     }
 }
 
-@media screen and (max-width: 767px){
-    .cover h2{
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .cover--grid3 article .distraction-title,
+    .cover--grid3 article h2{
         font-size: 20px;
-        margin-bottom: 0.25em;
-    }
-}
-
-@media screen and (min-width: 480px){
-    .nav-message {
-        font-size: 13px;
     }
 }

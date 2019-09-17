@@ -5,6 +5,12 @@
     margin: -8px;
 }
 
+.u-clear::after {
+    clear: both;
+    content: '';
+    display: block;
+}
+
 [class*=" u-col-"],
 [class^="u-col-"]{
     flex: 0 0 auto;
