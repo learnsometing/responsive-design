@@ -23,10 +23,16 @@ Navigation
     background: #fff;
     box-shadow: 0 0 32px rgba(0, 0, 0, .15);
 }
+
 .nav-logo > a{
     background: linear-gradient(to bottom right,#c09,#f42 85%);
     font-size: 24px;
     font-weight: bold;
+}
+
+.nav-mob,
+.nav-mob h5{
+    color: #fff;
 }
 
 /* 

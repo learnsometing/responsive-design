@@ -4,6 +4,10 @@ Top Navigation
 ====================
 */
 
+body.is-navSticky .nav {
+    position: fixed;
+}
+
 .nav-follow,
 .nav-sections,
 .nav-sections-dropdown,
@@ -81,6 +85,9 @@ Top Navigation
 
 .nav-mob-toggle {
     position: relative;
+    transition: transform .4s, -webkit-transform .4s;
+    opacity: 1 !important;
+    z-index: 998;
 }
 
 .nav-mob-toggle div{
@@ -94,11 +101,112 @@ Top Navigation
     background-color: #f42;
     display: block;
     height: 2px;
+    left: 14px;
     margin-top: -1px;
-    margin-bottom: 5px;
+    position: absolute;
+    top: 50%;
     width: 20px;
 }
 
+.nav-mob-toggle span:first-child {
+    transform: translateY(-6px);
+}
+
+.nav-mob-toggle span:last-child {
+    transform: translateY(6px);
+}
+
+.nav-mob {
+    transition: .4s;
+    transform: translateX(100%);
+    background: linear-gradient(to bottom right, #c09, #f42 85%);
+    height: 100vh;
+    left: 0;
+    padding: 48px 20px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    will-change: transform;
+    z-index: 997;
+}
+
+body.is-showNavMob .nav-mob {
+    transform: translateX(0);
+}
+
+body.is-showNavMob .nav-mob-toggle {
+    transform: rotate(90deg);
+}
+
+body.is-showNavMob .nav-mob-toggle span:first-child {
+    transform: rotate(45deg) translate(0);
+}
+
+body.is-showNavMob .nav-mob-toggle span:nth-child(2) {
+    transform: scaleX(0);
+}
+
+body.is-showNavMob .nav-mob-toggle span:last-child {
+    transform: rotate(-45deg) translate(0);
+}
+
+body.is-showNavMob .nav-mob-toggle span {
+    background-color: #fff;
+}
+
+.nav-mob-content {
+    overflow: auto;
+    border-top: 1px solid hsla(0,0%,100%,.15);
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    top: 48px;
+}
+
+.nav-mob-follow {
+    border-bottom: 1px solid hsla(0, 0%, 100%, .15);
+    margin: 0 -20px 2em;
+    padding: 0 20px 20px;
+}
+
+.nav-mob-follow li {
+    float: left;
+    height: 16px;
+    margin-bottom: 0;
+    text-align: center;
+    width: 10%;
+}
+
+.nav-mob-follow li:first-child {
+    margin-left: 0;
+}
+
+.nav-mob-follow::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.nav-mob-menu {
+    margin-bottom: 2em;
+}
+
+.nav-mob-menu li {
+    margin-top: .5em;
+}
+
+.nav-mob .post-body a strong,
+.nav-mob a,
+.post-body a .nav-mob strong {
+    color: hsla(0,0%,100%,.6);
+}
+
+.u-col-xs-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+}
 .nav{
     left: 0;
     position: fixed;
@@ -462,15 +570,15 @@ Deals
 ====================
 */
 
-    .deals.deals--long .deals-header .deals-header-more::after {
-        content: '|';
-        margin-left: 10px;
-        margin-right: 10px;
-        display: none;
-        pointer-events: none;
-        position: absolute;
+.deals.deals--long .deals-header .deals-header-more::after {
+    content: '|';
+    margin-left: 10px;
+    margin-right: 10px;
+    display: none;
+    pointer-events: none;
+    position: absolute;
 
-    }
+}
 
 .deals-header-more:not(:first-of-type) {
     margin-right: 23px;
@@ -620,6 +728,10 @@ Media Queries
 */
 
 @media screen and (max-width: 767px) {
+    body.is-showNavMob {
+        overflow: hidden;
+    }
+
     .cover article {
         min-height: 30vh;
         position: relative;
