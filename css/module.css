@@ -179,6 +179,10 @@ body.is-showNavMob .nav-mob-toggle span {
     width: 10%;
 }
 
+.nav-mob-follow .icon {
+    margin: 0 auto;
+}
+
 .nav-mob-follow li:first-child {
     margin-left: 0;
 }
@@ -203,10 +207,6 @@ body.is-showNavMob .nav-mob-toggle span {
     color: hsla(0,0%,100%,.6);
 }
 
-.u-col-xs-6 {
-    flex-basis: 50%;
-    max-width: 50%;
-}
 .nav{
     left: 0;
     position: fixed;
@@ -289,25 +289,6 @@ news
 .latest .distraction-title,
 .latest h2{
     margin-bottom: 24px;
-}
-
-[class*=" u-col-"],
-[class^="u-col-"]{
-    flex: 0 0 auto;
-    padding: 8px;
-    position: relative;
-}
-
-.u-col-xs-12 {
-    flex-basis: 100%;
-    max-width: 100%;
-}
-
-.u-row {
-    display: flex;
-    flex: 0 1 auto;
-    flex-flow: row wrap;
-    margin: -8px;
 }
 
 .wrapper {

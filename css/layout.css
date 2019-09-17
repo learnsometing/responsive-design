@@ -1,0 +1,23 @@
+.u-row {
+    display: flex;
+    flex: 0 1 auto;
+    flex-flow: row wrap;
+    margin: -8px;
+}
+
+[class*=" u-col-"],
+[class^="u-col-"]{
+    flex: 0 0 auto;
+    padding: 8px;
+    position: relative;
+}
+
+.u-col-xs-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+.u-col-xs-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+}
